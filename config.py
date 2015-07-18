@@ -4,7 +4,7 @@ import os
 FILENAME = 'config.cfg'
 config = configparser.ConfigParser()
 
-def create_config_file(filename):
+def create_config_file():
     try:
         config.add_section('section1')
     except configparser.DuplicateSectionError:
@@ -18,14 +18,14 @@ def create_config_file(filename):
     config.set('section1', 'int_1', '15')
     config.set('section2', 'int_2', '30')
 
-    with open(filename, 'w+') as configfile:
+    with open(FILENAME, 'w+') as configfile:
         config.write(configfile)
 
 
 
 
 if not os.path.isfile(FILENAME):
-    create_config_file(config, FILENAME)
+    create_config_file()
 
 config.read(FILENAME)
 
