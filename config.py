@@ -25,7 +25,7 @@ def create_config_file(filename):
 
 
 if not os.path.isfile(FILENAME):
-    config.create_config_file(config, FILENAME)
+    create_config_file(config, FILENAME)
 
 config.read(FILENAME)
 
