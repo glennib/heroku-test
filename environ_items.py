@@ -7,3 +7,4 @@ def getCounter():
 def setCounter(n):
     new_value = str(n)
     os.putenv('HT_COUNTER', new_value)
+    os.environ['HT_COUNTER'] = new_value
