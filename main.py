@@ -1,13 +1,14 @@
 import time
-import environ_items
+import config
+
 
 while True:
     print('Counter value at start:')
-    print(environ_items.getCounter())
+    print(config.int_1)
 
     print('Increase counter value by 3:')
-    environ_items.setCounter(environ_items.getCounter() + 3)
-    print(environ_items.getCounter())
+    config.set_int_1(config.int1 + 3)
+    print(config.int_1)
 
     print('Going to sleep for 10 seconds...')
     time.sleep(10)
