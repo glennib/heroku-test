@@ -25,6 +25,7 @@ def create_config_file():
 
 
 if not os.path.isfile(FILENAME):
+    print('Didn\'t find config file. Creating a new one.')
     create_config_file()
 
 config.read(FILENAME)
