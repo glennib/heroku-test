@@ -4,7 +4,7 @@ import database
 
 while True:
     print('Counter value at start:')
-    print(database.Value)
+    print(database.counter_1.Value)
 
     print('Increase counter value by 3:')
     database.counter_1.Value += 3
