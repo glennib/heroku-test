@@ -11,4 +11,6 @@ while True:
     print(database.counter_1.Value)
 
     print('Going to sleep for 10 seconds...')
+
+    database.db.commit()
     time.sleep(10)
