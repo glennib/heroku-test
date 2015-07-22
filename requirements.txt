@@ -1,0 +1,2 @@
+mysql-connector-repackaged==0.3.1
+peewee==2.6.3
