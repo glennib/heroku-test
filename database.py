@@ -9,7 +9,6 @@ dbname = url.path
 db = MySQLDatabase(dbname, host=url.hostname, user=url.username, passwd=url.password)
 
 
-@db.atomic()
 class BaseModel(Model):
     """A base model for all other models"""
 
@@ -17,7 +16,6 @@ class BaseModel(Model):
         database = db
 
 
-@db.atomic()
 class Setting(BaseModel):
     Name = CharField(index=True, unique=True)
     Value = FloatField()
