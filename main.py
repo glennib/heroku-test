@@ -12,5 +12,4 @@ while True:
 
     print('Going to sleep for 10 seconds...')
 
-    database.db.commit()
     time.sleep(10)
