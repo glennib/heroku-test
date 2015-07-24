@@ -4,7 +4,7 @@ import os
 from pprint import pprint
 
 url = urllib.parse.urlparse(os.getenv('CLEARDB_DATABASE_URL'))
-dbname = url.path
+dbname = url.path[1:]
 
 pprint(vars(url))
 
