@@ -30,7 +30,7 @@ else:
     print('Setting table exists. Do nothing.')
 
 # Delete if true
-if True:
+if False:
     print('Deleting all entries in table Setting')
     for setting in Setting.select():
         setting.delete_instance()

@@ -7,7 +7,7 @@ while True:
     print(database.setting_1.Value)
 
     print('Increase counter value by 3:')
-    database.setting_1.Value += 3
+    database.setting_1.value += 3
     database.setting_1.save()
     print(database.counter_1.Value)
 
