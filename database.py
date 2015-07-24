@@ -1,9 +1,13 @@
 from peewee import *
 import urllib.parse
 import os
+from pprint import pprint
 
 url = urllib.parse.urlparse(os.getenv('CLEARDB_DATABASE_URL'))
 dbname = url.path
+
+pprint(vars(url))
+
 db = MySQLDatabase(dbname, host=url.hostname, user=url.username, passwd=url.password)
 
 
